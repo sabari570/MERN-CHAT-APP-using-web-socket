@@ -25,3 +25,4 @@ chat-client\*.sw?
 
 # Backend nodemodules files
 node_modules
+.env
