@@ -22,7 +22,7 @@ app.use(
     credentials: true,
     origin: function (origin, callback) {
       // Check if the request origin is allowed
-      if (!origin || origin === "https://chat-app-production-wiuc.onrender.com/") {
+      if (!origin || origin === "https://chat-app-production-wiuc.onrender.com") {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
