@@ -1,0 +1,51 @@
+.message-chat-header{
+    width: 100%;
+    background-color: rgb(57, 56, 56);
+    padding: 12px 16px;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.to-styling{
+    color: #cfcece;
+}
+
+.message-chat-header .chat-name{
+    color: rgb(255, 254, 254);
+    font-weight: 600;
+}
+
+.messages-list{
+    margin: 8px 0;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.empty-chats-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.empty-chats-wrapper p{
+    font-size: 1.5rem;
+}
+
+.empty-chats-icon{
+    font-size: 4rem;
+}
+
+.center-loader{
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.initiate-convo-message{
+    text-align: center;
+    color: #f4eded;
+}

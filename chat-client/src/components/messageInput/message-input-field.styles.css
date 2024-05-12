@@ -1,0 +1,35 @@
+.message-input-block {
+    background-color: rgb(57, 56, 56);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.message-input-field {
+    flex: 1;
+    background-color: rgb(57, 56, 56);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    outline: none;
+    resize: none;
+    max-height: 3rem;
+}
+
+.send-message-icon {
+    margin-right: 8px;
+    font-size: 1.3rem;
+    color: #b3adad;
+}
+
+.send-message-icon:hover {
+    cursor: pointer;
+}
+
+.send-message-btn{
+    background-color: transparent;
+    border: none;
+}

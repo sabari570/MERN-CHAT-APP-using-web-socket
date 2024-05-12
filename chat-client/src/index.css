@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #000;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is to add an item before the container div */
+.container::before {
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#08ffe6, #fcd200);
+    transform: translate(-490px, -150px);
+}
+
+
+/* This is to add an item after the container div */
+.container::after {
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#fcd200, #fc002e);
+    transform: translate(490px, 100px);
+}
+
+.ball-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #04f504;
+    transform: translate(-250px, 200px);
+    position: absolute;
+}
+
+.ball-2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #08e2ff;
+    transform: translate(-10px, -220px);
+    position: absolute;
+}
+
+.ball-3 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #ffc404;
+    transform: translate(150px, 250px);
+    position: absolute;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #555;
+    /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #121212;
+    border-radius: 5px;
+    /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+    /* Color of the scrollbar thumb on hover */
+}
+
+@media screen and (max-width: 800px) {
+
+    /* This is to add an item before the container div */
+    .container::before {
+        height: 30vh;
+        width: 30vh;
+        transform: translate(-20vw, -150px);
+    }
+
+
+    /* This is to add an item after the container div */
+    .container::after {
+        height: 30vh;
+        width: 30vh;
+        transform: translate(20vw, 170px);
+    }
+
+
+    .ball-1 {
+        transform: translate(-100px, 150px);
+    }
+
+    .ball-2 {
+        transform: translate(100px, -270px);
+    }
+
+    .ball-3 {
+        transform: translate(120px, -70px);
+    }
+
+}

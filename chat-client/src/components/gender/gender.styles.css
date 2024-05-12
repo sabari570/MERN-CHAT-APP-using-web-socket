@@ -1,0 +1,17 @@
+.gender-block span{
+    color: rgb(174, 174, 174);
+}
+
+.gender-options{
+    margin-top: 5px;
+    display: flex;
+    gap: 1rem;
+}
+
+.gender-options label{
+    color: rgb(215, 208, 208);
+}
+
+.gender-inputs{
+    margin-right: -10px;
+}

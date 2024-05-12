@@ -1,0 +1,42 @@
+.search-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-field {
+    background-color: rgb(57, 56, 56);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 10px;
+    width: 80%;
+}
+
+.search-icon-wrapper {
+    background-color: #08e2ff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(134, 131, 131);
+    margin-right: 10px;
+}
+
+.search-icon-wrapper:hover {
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 1.3rem;
+}
+
+.search-icon-btn{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

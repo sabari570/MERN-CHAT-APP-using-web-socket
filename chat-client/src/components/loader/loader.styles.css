@@ -1,0 +1,25 @@
+.btn-loader {
+    height: 30px;
+    width: 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    border-right-color: #1f2e32;
+    border-top-color: #1f2e32;
+    border-bottom-color: #1f2e32;
+    animation: spin 1s linear infinite;
+}
+
+.conversation-loader-position {
+    margin-left: 40%;
+    margin-top: 80%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

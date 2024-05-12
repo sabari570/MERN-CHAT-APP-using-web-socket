@@ -1,0 +1,74 @@
+.auth-page-heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side-heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.right-side-heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #08e2ff;
+}
+
+.login-form, .register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.useremail-block, .password-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.useremail-block label, .password-block label{
+    color: rgb(174, 174, 174);
+    margin-bottom: 6px;
+}
+
+.username-input, .useremail-input, .password-input{
+    width: 24rem;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+
+
+
+.login-footer a{
+    color: #08e2ff;
+}
+
+.login-btn{
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #08e2ff;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn:hover{
+    background:  #023d45;
+}
+
+
+@media screen and (max-width: 800px){
+    .username-input, .useremail-input, .password-input{
+        width: 100%;
+    }
+}

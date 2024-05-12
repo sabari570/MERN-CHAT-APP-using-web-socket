@@ -1,0 +1,27 @@
+# Logs
+chat-client\logs
+chat-client\*.log
+chat-client\npm-debug.log*
+chat-client\yarn-debug.log*
+chat-client\yarn-error.log*
+chat-client\pnpm-debug.log*
+chat-client\lerna-debug.log*
+chat-client\
+chat-client\node_modules
+chat-client\dist
+chat-client\dist-ssr
+chat-client\*.local
+chat-client\
+# Editor directories and files
+chat-client\.vscode/*
+chat-client\!.vscode/extensions.json
+chat-client\.idea
+chat-client\.DS_Store
+chat-client\*.suo
+chat-client\*.ntvs*
+chat-client\*.njsproj
+chat-client\*.sln
+chat-client\*.sw?
+
+# Backend nodemodules files
+node_modules
