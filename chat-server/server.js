@@ -17,19 +17,19 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json({ extended: true }));
 // To allow API request from any other port we use CORS
 // origin * means its accepts request from any port
-app.use(
-  cors({
-    credentials: true,
-    origin: function (origin, callback) {
-      // Check if the request origin is allowed
-      if (!origin || origin === "https://chat-app-production-wiuc.onrender.com") {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-  })
-);
+// app.use(
+//   cors({
+//     credentials: true,
+//     origin: function (origin, callback) {
+//       // Check if the request origin is allowed
+//       if (!origin || origin === "https://chat-app-production-wiuc.onrender.com") {
+//         callback(null, true);
+//       } else {
+//         callback(new Error("Not allowed by CORS"));
+//       }
+//     },
+//   })
+// );
 app.use(express.urlencoded({ extended: true }));
 
 // Inorder to access the frontend(chat-client) folder and access the dist folder(after building the frontend application)
