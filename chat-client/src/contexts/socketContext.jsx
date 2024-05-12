@@ -20,7 +20,7 @@ export const SocketContextProvider = ({ children }) => {
   useEffect(() => {
     if (currentUser) {
       const socket = io(
-        "http://localhost:8000",
+        "https://chat-app-production-wiuc.onrender.com",
         // once the user is logged in and get connected to the web socket we pass the users id to the socket
         //  inorder to add the user to the userSocketMap in the backend, this is how we send data in web socket
         {
